@@ -9,6 +9,10 @@ if (numberA > numberB)
 {
     max = numberA;
 }
+else
+{
+    max = numberB;
+}
   
 if (max < numberC)
 {
