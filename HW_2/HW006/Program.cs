@@ -8,7 +8,7 @@ if (number >= 100)
         number /= 10;
     }
     result = number % 10;
-    Console.WriteLine(result);
+    Console.WriteLine($"Третья цифра: {result}");
 }
 else
 {
