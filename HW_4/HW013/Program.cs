@@ -1,10 +1,12 @@
 ﻿
-Console.WriteLine("Введите длинну массива: ");
-int [] array = new int [20];
-int rand = new Random();
-for (int i = 0; i < len; i++)
-
+Console.Write("Введите длинну массива: ");
+int count = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[count];
+Console.Write("Получаем массив: ");
+for (int i = 0; i < count; i++)
 {
-    array[i] = rand.Next(1,5);
+    array[i] = new Random().Next(count + 1);
+    
+    Console.Write($"{array[i]}; ");    
 }
-Console.WriteLine(rand);
+

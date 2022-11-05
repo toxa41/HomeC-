@@ -4,9 +4,9 @@
 //2, 4 -> 16
 
 
-Console.WriteLine("Введите число: ");
+Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите степень: ");
+Console.Write("Введите степень: ");
 int degree = Convert.ToInt32(Console.ReadLine());
 
 double calculation (int num, int degr)
@@ -17,5 +17,5 @@ double calculation (int num, int degr)
 
 
 double output = calculation (number, degree);
-Console.WriteLine ($"Ответ: {output}");
+Console.WriteLine ($"Число {number} в степени {degree} равно {output}");
 
