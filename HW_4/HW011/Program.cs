@@ -11,8 +11,12 @@ int degree = Convert.ToInt32(Console.ReadLine());
 
 double calculation (int num, int degr)
 {
-    double result = Math.Pow(num, degr);
-    return result;
+    bool flag = degr > 0;
+    if (degr < 0) degr = - degr;
+    int result = 1;
+    for (int i = 0; i < degr; i++) result *= num;
+    if (flag) return result;
+    else return 1.0 / result;
 }
 
 
