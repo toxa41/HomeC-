@@ -29,7 +29,7 @@ void ArrayRandom(int[] numbers)
 {
     for (int i = 0; i < numbers.Length; i++)
     {
-        numbers[i] = new Random().Next(1, 900);
+        numbers[i] = new Random().Next(1, 100);
     }
 }
 
