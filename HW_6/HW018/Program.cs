@@ -7,19 +7,19 @@ double pointY;
 Console.Write("Даны прямые заданные формулами y = k1 * x + b1, y = k2 * x + b2");
 Console.Write("Введите по очереди b1, k1, b2 и k2 одной строкой через пробел: ");
 int[] array = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-int a = array [1];
-int b = array [3];
-int c = array [0];
-int d = array [2];
+int lineA = array [1];
+int lineB = array [3];
+int lineC = array [0];
+int lineD = array [2];
 
-if (a == b)
+if (lineA == lineB)
 {
     Console.WriteLine("Прямые с такими параметрами паралельны");
 }
 else
 {
-    pointX = (double) (d-c)/(a-b);
-    pointY = (double) a*(d-c)/(a-b) + c;
+    pointX = (double) (lineD-lineC)/(lineA-lineB);
+    pointY = (double) lineA*(lineD-lineC)/(lineA-lineB) + lineC;
     Console.WriteLine("Координаты точки пересечения двух прямых:");
     Console.WriteLine($"Х: {pointX:0.0}");
     Console.WriteLine($"Y: {pointY:0.0}");
