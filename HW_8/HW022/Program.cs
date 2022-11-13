@@ -12,7 +12,7 @@
 
 
 
-int[,] matrix = new int[3, 4];
+int[,] matrix = new int[4, 4];
 
 void FillArray(int[,] matr)
 {
